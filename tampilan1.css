@@ -1,0 +1,47 @@
+.tombol:hover {
+    background-color: #2bfb32; 
+}
+
+/*membuat tampilan utama navbar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 219, 59);
+    color: rgb(246, 246, 246);
+    padding:16px 32px;
+}
+
+/*membuat logo*/
+.navbar .logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*membuat tampilan daftar menu*/
+.nav-links{
+    list-style: none;
+    display:flex;
+    gap: 25px;
+}
+
+/*membuat tampilan teks link*/
+.nav-links a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: impact;
+}
+
+/*membuat tampilan hover*/
+.nav-links a:hover{
+    background-color: rgb(193, 193, 193);
+    color: white;
+}
+
+#items{
+    font-size: 16px;
+    font-family: impact;
+    color: cadetblue;
+}
+
