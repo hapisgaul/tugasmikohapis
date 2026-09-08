@@ -6,45 +6,42 @@
     <title>latihan javascript</title>
     <link rel="stylesheet" href="tampilan.css">
     <script src="script.js"></script>
+    
+    <!-- PERBAIKAN 1: Tag pembuka style diperbaiki (tidak ganda) -->
     <style>
-<style>
-.kontainer-gambar {
-    width: 300px;         
-    height: 200px;       
-    /* 1. HAPUS ATAU KOMENTARI overflow: hidden AGAR BINGKAI TIDAK TERPOTONG SAAT MEMBESAR */
-    /* overflow: hidden; */ 
-    border-radius: 8px;
-    display: inline-block;
-}
+    .kontainer-gambar {
+        width: 300px;         
+        height: 200px;       
+        /* overflow: hidden; */ 
+        border-radius: 8px;
+        display: inline-block;
+    }
 
-.gambar-zoom {
-    width: 500px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    /* 2. PINDAHKAN BINGKAI KE SINI AGAR IKUT TERKENA EFEK TRANSFORM SCALE */
-    border: 5px solid burlywood; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
+    .gambar-zoom {
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 5px solid burlywood; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
 
-.kontainer-gambar:hover .gambar-zoom {
-    /* 3. Gambar dan Bingkai akan membesar bersamaan sebesar 1.5x */
-    transform: scale(1.5); 
-}
+    .kontainer-gambar:hover .gambar-zoom {
+        transform: scale(1.5); 
+    }
 
-.yakan:hover {
-    background-color: #5969f5 !important; 
-}
+    .yakan:hover {
+        background-color: #37ee6e !important; 
+    }
 
-.ya:hover{
-    color:burlywood !important;
-}
+    .ya:hover{
+        color:rgb(246, 245, 244) !important;
+    }
 
-.tombol:hover {
-    background-color: #2980b9; 
-}
-</style>
+    .tombol:hover {
+        background-color: #2bfb32; 
+    }
     </style>
 </head>
 <body>
@@ -56,35 +53,39 @@
             <li><a href='surat-izin.html'>surat izin</a></li>
             <li><a href='kontak.html'>kontak penjual</a></li>
         </ul>
-
-    <h1>HALAMAN RESEP MAKANAN</h1>
     </nav>
-     <center><h1 style="color: burlywood;">HALAMAN RESEP MAKANAN</h1></center>
+     
+     <center><h1 style="color: rgb(51, 47, 48);">HALAMAN RESEP MAKANAN</h1></center>
      <center>
         <div class="kontainer-gambar">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6p7WL7RRWv8TnMjvLDUNjWmwcMrvPFDAXhX4_jp77Kg&s=10" alt="Nasi Goreng" class="gambar-zoom">
-        </div></center>
+            <!-- PERBAIKAN 2: Menambahkan class="gambar-zoom" agar efek CSS-nya aktif -->
+            <img src="media/mieayam.jfif" alt="mie ayam" class="gambar-zoom">
+        </div>
+     </center>
+     
   <hr>
-    <h2 class="ya" style="background-color: rgb(7, 7, 94);">    Resep Nasi Goreng Mas Sabetiw</h2>
-    <p class="yakan" style="background-color: rgb(0, 162, 255);">
+    <h2 class="ya" style="background-color: rgb(89, 197, 6);">    Resep Mie Ayam</h2>
+    <p class="yakan" style="background-color: rgb(255, 255, 255);">
         Bahan-bahan:<br>
-        - 2 piring nasi putih<br>
-        - 2 butir telur<br>
-        - 3 siung bawang putih, cincang halus<br>
-        - 2 buah cabai merah, iris tipis<br>
+        - 500 gram mie telur/mie khusus<br>
+        - 1 ikat sawi hijau, potong-potong dan rebus sebentar<br>
+        - Daun bawang, iris halus untuk taburan<br>
+        - Bawang goreng untuk taburan<br>
         - 1 batang daun bawang, iris tipis<br>  
         - 2 sendok makan kecap manis<br>
         - Garam dan merica secukupnya<br>
-        - Minyak goreng untuk menumis
     </p><hr>
-    <h1 class="ya" style="background-color: rgb(7,7,94);">   Cara Membuat:</h1>
-    <p class="yakan" style="background-color: rgb(0, 162, 255);">
-        1. Panaskan minyak goreng dalam wajan, tumis bawang putih hingga harum.<br>
-        2. Masukkan cabai merah dan daun bawang, tumis sebentar.<br>
-        3. Tambahkan telur, aduk hingga matang.<br>
-        4. Masukkan nasi putih, aduk rata dengan bumbu.<br>
-        5. Tambahkan kecap manis, garam, dan merica, aduk hingga merata.<br>
-        6. Angkat dan sajikan nasi goreng hangat.
+    <h1 class="ya" style="background-color: rgb(24, 253, 7);">   Cara Membuat:</h1>
+    <p class="yakan" style="background-color: rgb(248, 249, 250);">
+        1. Panaskan minyak sayur di wajan, masukkan kulit ayam.<br>
+        2. Masak dengan api kecil hingga kulit ayam kering dan mengeluarkan minyak alami.<br>
+        3. Masukkan bawang putih cincang, tumis hingga harum dan kekuningan. Angkat dan saring. Minyak ayam siap digunakan.<br>
+        4. Tumis bumbu halus bersama daun salam, daun jeruk, dan serai hingga matang dan harum.<br>
+        5. Masukkan potongan daging ayam, aduk rata hingga ayam berubah warna.<br>
+        6. Tambahkan air, lalu bumbui dengan kecap manis, saus tiram, garam, gula, dan kaldu bubuk.<br>
+        7.Masak menggunakan api sedang hingga air menyusut, bumbu meresap, dan kuahnya mengental.<br>
+        8.Sesaat sebelum diangkat, masukkan irisan daun bawang kasar, aduk rata, lalu matikan api<br>
+        9.Didihkan air di panci terpisah. Rebus mie telur selama sekitar 2-3 menit hingga tingkat kekenyalan yang pas. Angkat dan tiriskan.
     </p><hr>
     <h2 id="namapesanan">
         silahkan pesan sekarang, klik tombol dibawah ini untuk memesan
@@ -94,7 +95,7 @@
     <!-- MENAMBAHKAN FUNGSI ALERT JAVASCRIPT -->
     <script>
         function pesanSekarang() {
-            alert("Pesanan Nasi Goreng Mas Sabetiw berhasil diproses! Mohon tunggu sebentar.");
+            alert("Pesanan Mie Ayam berhasil diproses! Mohon tunggu sebentar.");
         }
     </script>
 </body>

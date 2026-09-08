@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>latihan javascript</title>
+    <title>Halaman Surat</title>
     <link rel="stylesheet" href="tampilan.css">
-
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -19,8 +20,52 @@
             <li><a href='kontak.html'>kontak penjual</a></li>
         </ul>
 
-    <h1>HALAMAN SURAT IZIN</h1>
+    <h1>HALAMAN SURAT</h1>
     </nav>
-    <center><h1 style="color: burlywood;">HALAMAN SURAT IZIN</h1></center>
+    <div class="main-container">
+    <div class="form-container">
+        <h1>FORMULIR PENGAJUAN SURAT IZIN</h1>
+        <FORM action="prosessurat.php" method="post" target="_blank" onsubmit="return validasiForm()">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap : </label>
+                <input type="text" name="nama" id="nama" placeholder="contoh : Miko dede "required>
+            </div>
+            <div class="form-group">
+                <label for="nis">NIS : </label>
+                <input type="number" name="nis" id="nis" placeholder="contoh : 257198" required>
+            </div>
+            <div class="form-group">
+                <label for="kelas">Kelas : </label>
+                <input type="text" name="kelas" id="kelas" placeholder="contoh : XI RPL 1" required>
+            </div>
+            <div class="form-group">
+                <label for="alasan">Alasan Izin : </label>
+                <select name="alasan" id="alasan" required>
+                    <option value="">Pilih Alasan</option>
+                    <option value="Sakit">Sakit</option>
+                    <option value="Acara Keluarga">Acara Keluarga</option>
+                    <option value="Keperluan magang">keperluan Magang</option>
+                    <option value="izin terlambat">Izin Terlambat</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="tanggal mulai ">Tanggal Mulai : </label>
+                    <input type="date" name="tanggal" id="tanggal" required>
+                </div>
+                <div class="form-group half">
+                    <label for="tanggal selesai">Tanggal Selesai : </label>
+                    <input type="date" name="tanggal2" id="tanggal2" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="keterangan">Keterangan/ detail alasan</label>
+                <textarea name="keterangan" id="keterangan" rows="3" placeholder="Masukkan detail alasan izin..." ></textarea>
+            </div>
+
+            <button class="btn-submit" type="submit">Buat Surat</button>
+        </FORM>
+    </div>
+    </div>
 </body>
 </html>

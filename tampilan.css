@@ -9,8 +9,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(8, 8, 103);
-    color: burlywood;
+    background-color: rgb(34, 219, 59);
+    color: rgb(246, 246, 246);
     padding:16px 32px;
 }
 

@@ -2,8 +2,8 @@ function tampilkanNama(){
     document.getElementById("namaAnggota").innerHTML=
     `
     <ol>
-       <li>putra(putra@gmail.com)</li>
-        <li>wahyu(wahyu@gmail.com)</li>
+       <li>hapis(hapis@gmail.com)</li>
+        <li>miko(miko@gmail.com)</li>
     </ol>
 
         <button onclick="location.reload()">
